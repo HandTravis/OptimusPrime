@@ -28,9 +28,6 @@ jobs:
           echo "Last updated: $(date)" > last-updated.txt  # Example change
           git add .
           git commit -m "Automated commit: $(date)" || echo "No changes to commit"
-
-      - name: Set Git Remote URL
-        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/HandTravis/OptimusPrime.git
         
       - name: Push Changes
         run: git push origin main
