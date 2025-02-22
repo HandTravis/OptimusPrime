@@ -5,3 +5,4 @@ load_dotenv()
 
 PAT = os.getenv('PAT')
 print("Hello automated workflow!")
+print("Testing day 2!")
